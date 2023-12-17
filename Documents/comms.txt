@@ -1,0 +1,10 @@
+* Anaconda symlink
+https://stackoverflow.com/questions/61022248/i-can%C2%B4t-install-anaconda-on-linux
+
+* Brave Wayland
+brave://flags
+Preferred Ozone Platform - Wayland
+
+* Clean Flatpak 
+sudo rm -rfv /var/tmp/flatpak-cache-*
+flatpak uninstall --unused
