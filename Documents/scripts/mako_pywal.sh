@@ -17,18 +17,18 @@ COLOR8=`head -9 $COLORS | tail -1`
 COLOR9=`head -10 $COLORS | tail -1`
 
 cat << EOF > $MAKOCONFIG
-font=JetBrainsMono NF 10
+font=JetBrainsMono NF 12
 layer=overlay
 # anchor=bottom-right
 # width=320
 # padding=8
 # margin=8
-# border-size=2
+border-size=4
 default-timeout=2
 # border-radius=40
 
-background-color=$COLOR9
-text-color=$COLOR3
+background-color=$COLOR6
+text-color=$COLOR7
 progress-color=over $COLOR0
 
 [urgency=low]
@@ -38,13 +38,12 @@ text-color=$COLOR6
 
 [urgency=normal]
 border-color=$COLOR1
-background-color=$COLOR3
-text-color=$COLOR5
-default-timeout=10000
-ignore-timeout=1
+background-color=$COLOR6
+text-color=$COLOR7
+# default-timeout=10000
+# ignore-timeout=1
 
 [urgency=high]
-font=Sauce Code Pro 16
 border-color=$COLOR1
 background-color=$COLOR2
 text-color=$COLOR6

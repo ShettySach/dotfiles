@@ -28,7 +28,7 @@ configuration {
 }
 
 window {
-  width: 35%;
+  width: 32%;
   background-color: @bg;
 }
 

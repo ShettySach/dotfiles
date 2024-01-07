@@ -5,6 +5,14 @@ https://stackoverflow.com/questions/61022248/i-can%C2%B4t-install-anaconda-on-li
 brave://flags
 Preferred Ozone Platform - Wayland
 
+* Librewolf
+about:config -
+geo.enabled = false
+network.http.sendRefererHeader = 0
+
 * Clean Flatpak 
 sudo rm -rfv /var/tmp/flatpak-cache-*
 flatpak uninstall --unused
+
+* Reload Grub Config
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg

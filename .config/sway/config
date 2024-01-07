@@ -196,8 +196,11 @@ gaps inner 5
     set $powermenu rofi -show power-menu -modi power-menu:~/Documents/scripts/rofi-power-menu 
     bindsym $mod+m exec $powermenu
 
-    set $bluetoothmenu bash $HOME/Documents/scripts/rofi_bluetooth
-    bindsym $mod+Shift+b exec $bluetoothmenu 
+    set $bluetoothmenu bash ~/Documents/scripts/rofi_bluetooth
+    bindsym $mod+Shift+b exec $bluetoothmenu
+
+    set $pywal ~/.local/bin/wal -i ~/Pictures/Wallpapers/ -o ~/Documents/scripts/mako_pywal.sh
+    bindsym $mod+w exec $pywal
 #
 # Layout stuff:
 #
